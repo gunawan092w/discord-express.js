@@ -1,0 +1,23 @@
+{
+  "name": "discord-webclient",
+  "version": "0.1.0-beta",
+  "description": "Discord WebClient [2016-09 - 2019-04]",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "author": "gunawan092w",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "express.js": "^1.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunawan092w/discord-webclient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gunawan092w/discord-webclient/issues"
+  },
+  "homepage": "https://github.com/gunawan092w/discord-webclient#readme"
+}

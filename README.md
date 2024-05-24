@@ -29,11 +29,10 @@ Nothing. We do not collect any informations from user. Such as IP Addresses, Use
 We uploaded the "CORE" so that people can help us contribute to the client such as improvement, fix bugs, etc.
 
 # Some features doesn't work on the client!
-Yes, we don't gurantee that everything will work on the Client. Such as Uploading attachement to Discord, Payment information, Discord nitro subscription info, Server boosts, etc.
+Yes, we don't gurantee that everything will work on the Client. Such as Upload system, Connections, Nitro info, etc.
 
 # We need your help!
-<h4>We need your help to implement hCaptcha on older client! Newer client uses hCaptcha, which older client doesn't. We really appreciate if you could help us implement hCaptcha!</h4>
-<h4>We need your help to fix upload atta</h4>
+<h4>We need your help implementing hCaptcha on older client! Newer client uses hCaptcha, which older client doesn't. We really appreciate if you could help us implement hCaptcha!</h4>
 
 # Contributions
 If you have found any problems or want to add features on WebClient, Don't hesitate to open pull requests. This is really important to us and further developement of this project. We would love for you to contribute to our project to help us improve our webclient!

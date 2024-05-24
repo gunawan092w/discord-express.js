@@ -3,7 +3,7 @@
 <p>Using express.js to host a webserver, Discord v6 API Proxy, with Assets cacher</p>
 
 # Demo
-You may check out our demo [By clicking me!](https://dc19.gunawan092w1.eu.org). This is not a phishing website. This is a demo just to show how it looked like when hosting discord-webclient. Do not put fake information in there since those Discord API is from Discord official API. Once again, Our demo is not a phising website. You may review the code if you don't believe it.
+You may check out our demo [By clicking me!](https://dc19.gunawan092w1.eu.org). This is not a phishing website. This is a demo just to show how it looked like when hosting discord-webclient. Do not put fake information in there since those Discord API is from Discord official API. Once again, Our demo is not a phising website. You may review the code for further inspection.
 
 # Client Version
 <p>All clients are retrieved from web.archive.org - List of Client Version listed down below: [Year-Month]</p>
@@ -23,7 +23,7 @@ Everytime client fetches assets through `/assets/`, It first fetch the files thr
 No, Discord WebClient does not collect any user's information.
 
 # What information does it collect from user?
-Nothing. We do not collect any informations from user. Such as IP Addresses, User-Agent, GeoLocation, API Requests (such as Login, which includes email and password), etc. We take people's privacy very seriously. You may review our code if you don't believe it.
+Nothing. We do not collect any informations from user. Such as IP Addresses, User-Agent, GeoLocation, API Requests (such as Login, which includes email and password), etc. We take people's privacy very seriously. You may review our code for further inspection.
 
 # Why did you upload the javascript file for core of Discord Client?
 We uploaded the "CORE" so that people can help us contribute to the client such as improvement, fix bugs, etc.
@@ -32,7 +32,8 @@ We uploaded the "CORE" so that people can help us contribute to the client such 
 Yes, we don't gurantee that everything will work on the Client. Such as Uploading attachement to Discord, Payment information, Discord nitro subscription info, Server boosts, etc.
 
 # We need your help!
-We need your help to implement hCaptcha on older client! Since newer client uses hCaptcha, reCaptcha is now pretty useless to Discord. reCaptcha's site key is basically gone now. We really appreciate if you could help us implement hCaptcha!
+<h4>We need your help to implement hCaptcha on older client! Newer client uses hCaptcha, which older client doesn't. We really appreciate if you could help us implement hCaptcha!</h4>
+<h4>We need your help to fix upload atta</h4>
 
 # Contributions
 If you have found any problems or want to add features on WebClient, Don't hesitate to open pull requests. This is really important to us and further developement of this project. We would love for you to contribute to our project to help us improve our webclient!

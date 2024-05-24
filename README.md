@@ -1,5 +1,5 @@
 # Overview
-Discord WebClient (2016-09 - 2019-04) - V0.1.0-BETA
+Discord WebClient (2016-09 - 2019-04) - [v0.1.0-BETA]w\\w
 Using Express.JS to host a webserver, Discord v6 API Proxy, with Assets cacher
 
 # How do i run Discord WebClient?

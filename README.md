@@ -1,6 +1,6 @@
 # Overview
-Discord WebClient (2016-09 - 2019-04) - [v0.1.0-BETA]w\\w
-Using Express.JS to host a webserver, Discord v6 API Proxy, with Assets cacher
+<h3>Discord WebClient (2016-09 - 2019-04) - [v0.1.0-BETA]</h3>
+<h3>Using Express.JS to host a webserver, Discord v6 API Proxy, with Assets cacher</h3>
 
 # How do i run Discord WebClient?
 1. Clone this repository: `git clone https://github.com/gunawan092w/discord-webclient.git && cd discord-webclient`
@@ -12,8 +12,8 @@ Using Express.JS to host a webserver, Discord v6 API Proxy, with Assets cacher
 Everytime client fetches assets through `/assets/`, It first fetch the files through Discord Server `https://discord.com/assets/`. If the request responds 200 (OK), It downloads the assets and saves it to `cache` folder.
 
 # Does it collect information such as Account information, Token, Tracking every user movement (`/science/`), etc?
-No, Discord WebClient does not collect any user's information. 
-We have blocked `/api/science/` to prevent Discord tracking users.
+<h3>No, Discord WebClient does not collect any user's information.</h3>
+<h3>We have blocked `/api/science/` to prevent Discord tracking users.</h3>
 
 # Some features doesn't work on the client!
 Yes, we don't gurantee that everything will work on the Client. Such as Uploading attachement to discord, Payment information, Discord nitro subscription info, Server boosts, etc.

@@ -23,16 +23,16 @@ Everytime client fetches assets through `/assets/`, It first fetch the files thr
 No, Discord WebClient does not collect any user's information.
 
 # What information does it collect from user?
-Nothing. We do not collect any informations from user. Such as IP Addresses, User-Agent, GeoLocation, API Requests (such as Login, which includes email and password), etc. We take people's privacy very seriously. You may review our code for further inspection.
+We do not collect any informations from user. Such as IP Addresses, User-Agent, GeoLocation, API Requests (such as Login, which includes email and password), etc. We take people's privacy very seriously. You may review our code for further inspection.
 
-# Why did you upload the javascript file for core of Discord Client?
-We uploaded the "CORE" so that people can help us contribute to the client such as improvement, fix bugs, etc.
+# What is client.js on public folder?
+client.js is a javascript file for Discord client created by Discord. Made using React Framework. We uploaded it because there is some fixes that has been implemented to the client. No, we did not add some suspicious code that logs email and password or account token. As previously mentioned, we do not collect any informations from users.
 
-# Some features doesn't work on the client!
-Yes, we don't gurantee that everything will work on the Client. Such as Upload system, Connections, Nitro info, etc.
+# What's not working?
+Only Account registration, Upload system, and Captcha doesn't work for now. 
 
-# We need your help!
-<h4>We need your help implementing hCaptcha on older client! Newer client uses hCaptcha, which older client doesn't. We really appreciate if you could help us implement hCaptcha!</h4>
+# What about the captcha?
+We are working on implementing hCaptcha onto the client! We appreciate if you could help us out!
 
 # Contributions
 If you have found any problems or want to add features on WebClient, Don't hesitate to open pull requests. This is really important to us and further developement of this project. We would love for you to contribute to our project to help us improve our webclient!

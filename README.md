@@ -3,7 +3,7 @@
 <p>Using express.js to host a webserver, Discord v6 API Proxy, with Assets cacher</p>
 
 # Demo
-You may check out our demo [By clicking me!](https://dc19.gunawan092w1.eu.org). This is not a phishing website. This is a demo just to show how it looked like when hosting discord-webclient. Do not put fake information in there since those Discord API is from Discord official API. Once again, Our demo is not a phising website. You may review the code for further inspection.
+You may check out our demo [By clicking me!](https://dc16.gunawan092w1.eu.org). This is not a phishing website. This is a demo just to show how it looked like when hosting discord-webclient. Do not put fake information in there since those Discord API is from Discord official API. Once again, Our demo is not a phising website. You may review the code for further inspection.
 
 # Client Version
 <p>All clients are retrieved from web.archive.org - List of Client Version listed down below: [Year-Month]</p>

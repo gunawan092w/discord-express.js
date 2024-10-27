@@ -17,7 +17,7 @@ Soon.
 4. Visit the webclient on your browser: `http://localhost:3000`
 
 # How Asset caching works?
-Everytime client fetches assets through `/assets/`, It first fetch the files through Discord Server `https://discord.com/assets/`. If the request responds 200 (OK), It downloads the assets and saves it to `cache` folder.
+Simple! it fetches to https://discord.com/assets/ first and saves it onto caching folder ;)
 
 # Does it collect any user's information from it's client and API?
 No, Discord WebClient does not collect any user's information.

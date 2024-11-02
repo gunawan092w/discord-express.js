@@ -12,11 +12,13 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const https = require('https');
 
 const CACHE_DIR = path.join(__dirname, 'cache');
-const api = 'https://discord.com/api'; // Discord's API Endpoint
-const assets = 'https://discord.com/assets/'; // Discord's Assets endpoint
-const altassets = 'https://web.archive.org/web/20190401162254im_/https://discordapp.com/assets/'; // Alternative Discord Assets
+const api = 'https://canary.discord.com/api/'; // Discord's API Endpoint
+const assets = 'https://canary.discord.com/assets/'; // Discord's Assets endpoint
+const altassets = 'https://web.archive.org/canary.discord.com/assets/'; // Alternative Discord Assets
+const cdn = 'https://cdn.discordapp.com';
 
 fs.ensureDirSync(CACHE_DIR); // Check cache folder
 
@@ -52,6 +54,26 @@ app.use((req, res, next) => { // Ignore Discord tracker
 	} next();
 });
 
+app.use((req, res, next) => { // Ignore Discord tracker
+	if (req.path.startsWith('/error-reporting-proxy/') && req.path.endsWith('/web')) {
+		return res.end(); // Returns 200 (OK) with blank message
+	} next();
+});
+
+app.use('/cdn/*', async (req, res) => {
+	const path = req.originalUrl.replace('/cdn', ''); const url = `${api}${path}`;
+	try {
+		const response = await fetch(url, { method, body, headers: {
+			'Content-type': req.headers['content-type']
+		}});
+		const responseBody = await response.text(); 
+		const contentType = response.headers.get('content-type');
+		res.status(response.status).header('Content-Type', contentType).send(responseBody);
+	} catch (error) {
+		console.error('Error forwarding request:', url);
+		res.status(500).json({ error: 'Internal server error', details: error.message });
+	}
+})
 app.use('/api/*', async (req, res) => {
 	const path = req.originalUrl.replace('/api', ''); const url = `${api}${path}`;
 	const method = req.method; const body = (req.method !== 'GET' && req.method !== 'HEAD') ? JSON.stringify(req.body) : null;
@@ -77,4 +99,5 @@ app.use('/api/*', async (req, res) => {
 
 app.use(express.static(path.join(__dirname, 'public'))); // Static folder
 app.use((req, res) => {res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'))}); // Loads index.html as 404 page
-app.listen(PORT, () => {console.log(`Server is running on port ${PORT}`)}); // Start webserver
+//app.listen(PORT, () => {console.log(`Server is running on port ${PORT}`)}); // Start webserver
+https.createServer({ key: fs.readFileSync('key.pem'), cert: fs.readFileSync('cert.pem') }, app).listen(PORT);
